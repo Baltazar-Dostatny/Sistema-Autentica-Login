@@ -1,0 +1,71 @@
+* {
+    font-size: 100%;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    background-image: url("/images/login/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+
+#userUl {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    font-size: 0.5em
+}
+
+#userUl li, #userUlExtra li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+
+#nomeUsuario {
+    font-size: 1.5em;
+}
+
+#userUlExtra {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 1.1em;
+    visibility: hidden;
+    margin: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
