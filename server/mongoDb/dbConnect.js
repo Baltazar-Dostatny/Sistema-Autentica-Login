@@ -5,7 +5,7 @@ async function conectaMongoDb() {
         await mongoose.connect("mongodb+srv://User:User123@admin.fxvepf1.mongodb.net/cadastros?retryWrites=true&w=majority&appName=Admin");
         console.log("MongoDb Conectado!");
     }catch(error) {
-        throw new Error({Erro: "Não foi possivel estabelecer uma conexão com MongoDb"});
+        console.log("Não foi possivel estabelecer uma conexão com MongoDb");
     };
 };
 

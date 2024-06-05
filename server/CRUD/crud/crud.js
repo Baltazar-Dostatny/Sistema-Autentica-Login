@@ -135,3 +135,18 @@ app.post("/login/autentica/token", (req, res) => {
         res.status(500).send({Erro: erro.message});
     };
 });
+
+// VERIFICA EMAIL E SENHA PARA TROCA
+app.post("/login/troca/senha", async (req, res) => {
+    const dados = req.body;
+
+    try {
+        const login = await loginModel.find({email: dados.email});
+        if(login.length === 0) {throw new Error("Email inválido")};
+        if(await verificaHash(dados.senha, login[0].senha) !== true) {throw new Error("Senha inválida")};
+
+        res.status(200).send(true);
+    } catch(erro) {
+        res.status(500).send({Erro: erro.message});
+    };
+});
