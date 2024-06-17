@@ -16,13 +16,14 @@ Como acessar o projeto:
 2: Abra o terminal e nele certifique que está acessando a pasta raiz do projeto
 
 3: No terminal você precisara realizar a instalação dos pacotes necessarios para o funcionamento e segurança do sistema digitando os comandos abaixo:
-npm install nodemon@3.1.0
-npm install express@4.19.2
-npm install mongoose@8.3.1
-npm install bcrypt@5.1.1
-npm install jsonwebtoken@9.0.2
-npm install dotenv@16.4.5
-npm install body-parser@1.20.2
+
+1: npm install nodemon@3.1.0
+2: npm install express@4.19.2
+3: npm install mongoose@8.3.1
+4: npm install bcrypt@5.1.1
+5: npm install jsonwebtoken@9.0.2
+6: npm install dotenv@16.4.5
+7: npm install body-parser@1.20.2
 
 4: Ainda no terminal digite o seguinte comando para ligar o servidor: npm run dev
 
