@@ -69,3 +69,40 @@ main {
     align-items: center;
     font-size: 2.5em;
 }
+
+@media screen and (max-width: 650px) {
+    header {
+        font-size: 2em;
+    }
+
+    main {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header ul {
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    main {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        font-size: 1.3em;
+    }
+
+    main {
+        font-size: 1.3em;
+    }
+}
