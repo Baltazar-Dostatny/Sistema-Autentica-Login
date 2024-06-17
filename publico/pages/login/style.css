@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 10% 1fr;
-    background-image: url("/images/login/background.png");
+    background-image: url("../../images/login/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,37 +29,20 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center;
     padding: 20px;
 }
 
-#userUl {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    grid-template-rows: max-content max-content;
-    font-size: 0.5em
-}
-
-#userUl li, #userUlExtra li {
+header ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 16px;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 0.8em;
 }
 
-#nomeUsuario {
-    font-size: 1.5em;
-}
-
-#userUlExtra {
-    display: flex;
-    flex-direction: column;
-    grid-row: 2;
-    grid-column: 2;
-    font-size: 1.1em;
-    visibility: hidden;
-    margin: 10px 0;
+#buttonSair {
+    font-size: 0.8em;
 }
 
 main {
@@ -67,7 +50,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 @media screen and (max-width: 650px) {

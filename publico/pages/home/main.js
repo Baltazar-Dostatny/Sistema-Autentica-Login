@@ -92,7 +92,7 @@ function loginAprovado(respota) {
     // MANDA PAGINA LOGIN
     setTimeout(() => {
         window.location.href="/login";
-    }, 8000);
+    }, 4000);
 };
 
 function CadastroAprovado() {
@@ -106,7 +106,7 @@ function CadastroAprovado() {
     // MANDA PAGINA PARA REALIZAR LOGIN
     setTimeout(() => {
         window.location.href="/";
-    }, 8000);
+    }, 4000);
 };
 
 // LOGIN
@@ -466,4 +466,4 @@ botaoDireito.onclick=function() {
 };
 
 // INCIALIZADORES
-verificaLogin()
+// verificaLogin()

@@ -55,16 +55,7 @@ function tokenValido(nome, email) {
     document.getElementById("nomeUsuario").innerText=nome;
 };
 
-// BUTTON OPCÕES
-buttonOpcoes.onclick=function() {
-    const ulOpcoes = document.getElementById("userUlExtra");
-
-    if(ulOpcoes.style.visibility === "" || ulOpcoes.style.visibility === "hidden") {
-        ulOpcoes.style.visibility = "visible";
-    } else {
-        ulOpcoes.style.visibility = "hidden";
-    };
-};
+// BUTTON SAIR
 
 buttonSair.onclick=function() {
     localStorage.removeItem("token");
@@ -76,7 +67,7 @@ buttonSair.onclick=function() {
 
     setTimeout(() => {
         window.location="/";
-    }, 8000);
+    }, 4000);
 };
 
 // INICIALIZALIZADORES
