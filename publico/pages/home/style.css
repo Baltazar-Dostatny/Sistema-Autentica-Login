@@ -84,3 +84,15 @@ main button {
 #buttonsDiv button {
     width: 40%;
 }
+
+@media screen and (max-width: 700px) {
+    #buttonsDiv {
+        font-size: 0.85em;
+    };
+}
+
+@media screen and (max-width: 380px) {
+    main {
+        min-width: 250px;
+    };
+}
